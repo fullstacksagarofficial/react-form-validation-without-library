@@ -1,0 +1,79 @@
+body {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.formcontainer {
+  background: #ffffff69;
+  background-image: linear-gradient(to top, rgba(0, 213, 255, 0.701) 0%, #ffffffd6 100%);
+}
+.error {
+  color: #ea4353;
+}
+.title {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #282828;
+}
+
+.btnsubmit {
+  background: linear-gradient(-45deg,rgba(25,134,190,1) 0%, rgba(35,35,195,1) 35%, rgba(0,212,255,1));
+  background-size: 800% 400%;
+  padding: 0.5em 1.3em;
+  display: inline-block;
+  border: none;
+  font-size: 17px;
+  font-weight: 600;
+  color: white;
+  transition: all 0.5s ease-in-out;
+  animation: gradient 10s infinite cubic-bezier(0.62, 0.28, 0.23, 0.99) both;
+}
+
+.btnsubmit:hover {
+  animation: gradient 3s infinite;
+  transform: scale(1.05);
+}
+
+.btnsubmit:active {
+  animation: gradient 3s infinite;
+  transform: scale(0.8);
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.btnreset {
+  background: rgba(255, 255, 255, 0.578);
+  padding: 0.5em 1.3em;
+  display: inline-block;
+  border: none;
+  font-size: 17px;
+  font-weight: 600;
+  color: rgb(255, 0, 93);
+  border: 1px solid;
+  transition: all 0.5s ease-in-out;
+  animation: gradient 10s infinite cubic-bezier(0.62, 0.28, 0.23, 0.99) both;
+}
+
+.btnreset:hover {
+  animation: gradient 3s infinite;
+  transform: scale(1.05);
+}
+
+.btnreset:active {
+  animation: gradient 3s infinite;
+  transform: scale(0.8);
+}
